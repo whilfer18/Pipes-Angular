@@ -13,6 +13,11 @@
             </thead>
             <tbody>
                 <tr>
+                    <td> {{ nombre2 }} </td>
+                    <td> capitalizado </td>
+                    <td> {{ nombre2 | capitalizado }} </td>
+                </tr>
+                <tr>
                     <td>{{nombre}}</td>
                     <td>uppercase </td>
                     <td>{{nombre |uppercase}}</td>
@@ -79,6 +84,42 @@
                     <td> async </td>
                     <td> {{ valorPromesa | async }} </td>
                 </tr>
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date </td>
+                    <td> {{ fecha | date }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date:'medium' </td>
+                    <td> {{ fecha | date:'medium' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date:'short' </td>
+                    <td> {{ fecha | date:'short' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date:'MMMM - dd' </td>
+                    <td> {{ fecha | date:'MMMM - dd' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td>
+                        date:'MMMM - dd':'':'{{ idioma }}'
+                        <br>
+                        <button (click)="idioma='es'" class="mr-1 btn btn-primary">Español</button>
+                        <button (click)="idioma='en'" class="mr-1 btn btn-secondary">Inglés</button>
+                        <button (click)="idioma='fr'" class="mr-1 btn btn-success">Francés</button>
+                    </td>
+                    <td> {{ fecha | date:'MMMM - dd':'':idioma }} </td>
+                </tr>
+
             </tbody>
         </table>
     </div>

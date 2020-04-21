@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre: string = 'Whilmer Fernández';
+  nombre: string = 'Capitán América';
+  nombre2: string = 'WhilmerR FerNaNdez';
   arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   personajes: string[] = ['Ironman', 'Spiderman', 'Thor', 'Loki', 'Groot'];
