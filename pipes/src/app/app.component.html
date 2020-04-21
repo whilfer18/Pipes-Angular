@@ -72,13 +72,29 @@
                 <tr>
                     <td> {{ salario }} </td>
                     <td> currency:'COP':'symbol-narrow':'.0-0' </td>
-                    <td> {{ salario | currency:'COP':'symbol-narrow':'.0-0' }} </td>
+                    <td> {{ salario | currency:'COP' :'symbol-narrow':'.0-0' }} </td>
+                </tr>
+                <tr>
+                    <td> {{ valorPromesa }} </td>
+                    <td> async </td>
+                    <td> {{ valorPromesa | async }} </td>
                 </tr>
             </tbody>
         </table>
     </div>
 </div>
 
+<h3>JSON </h3>
+<hr>
+<div class="row mb-5">
+    <div class="col">
+
+        <pre>
+      {{ heroe | json }}
+    </pre>
+
+    </div>
+</div>
 <h3>Slice <small>slice:1:4</small> </h3>
 <hr>
 <ul class="list-group">
