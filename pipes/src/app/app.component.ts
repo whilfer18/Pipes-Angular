@@ -18,7 +18,7 @@ export class AppComponent {
   activar: boolean = true;
 
   idioma: string = 'en';
-  videoUrl: string = 'https://www.youtube.com/embed/-CBKW-90VxQ';
+  videoUrl: string = 'https://www.youtube.com/embed/_ZM7NLu07i8';
 
   valorPromesa = new Promise<string>((resolve) => {
 
